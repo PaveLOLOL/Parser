@@ -40,8 +40,8 @@ void MainWindow::on_downloadFile_clicked()
             } else if (sl.at(0) == ".DAT") {
 
             } else if (sl.at(0) == ".OBJ") {
+                qDebug() << sl.at(2);
                 if (sl.at(2).startsWith("DOT")) {
-                    qDebug() << sl.at(2);
                     if (sl.at(0) == ".SEM") {
                         ui->textEdit_2->append(str);
                     }
